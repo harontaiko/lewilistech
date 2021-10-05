@@ -526,7 +526,7 @@
                                             <span class="product-o__review">(0)</span>
                                         </div>
 
-                                        <span class="product-o__price">ksh 20,000
+                                        <span class="product-o__price">ksh 30,000
 
                                             <span class="product-o__discount">0</span></span>
                                     </div>
