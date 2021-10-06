@@ -12,11 +12,11 @@
                              <ul class="breadcrumb__list">
                                  <li class="has-separator">
 
-                                     <a href="index.html">Home</a>
+                                     <a href="<?php echo URLROOT; ?>">Home</a>
                                  </li>
                                  <li class="is-marked">
 
-                                     <a href="about.html">About</a>
+                                     <a href="<?php echo URLROOT; ?>/pages/about">About</a>
                                  </li>
                              </ul>
                          </div>

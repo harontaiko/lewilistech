@@ -4,7 +4,7 @@
     <?php require(APPROOT . '/views/inc/pre-loader.php'); ?>
     <div id="app">
         <?php require(APPROOT . '/views/inc/inner-header.php'); ?>
-        <?php require(APPROOT . '/views/content/login.php'); ?>
+        <?php require(APPROOT . '/views/content/recovery.php'); ?>
         <?php require(APPROOT . '/views/inc/footer.php'); ?>
     </div>
 </body>

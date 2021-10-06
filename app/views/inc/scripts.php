@@ -1,4 +1,6 @@
    <!--====== Google Analytics: change UA-XXXXX-Y to be your site's ID ======-->
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB06NoGZ-g_EzpIP43g5PdPsh0NxCcJkbk&callback=initMap">
+   </script>
    <script>
 window.ga = function() {
     ga.q.push(arguments)
@@ -16,9 +18,12 @@ ga('send', 'pageview')
    <!--====== jQuery Shopnav plugin ======-->
    <script src="<?php echo URLROOT ?>/public/javascript/jquery.shopnav.js"></script>
 
+
    <!--====== App ======-->
    <script src="<?php echo URLROOT ?>/public/javascript/app.js"></script>
 
+   <!--====== Google Maps ======-->
+   <script src="<?php echo URLROOT ?>/public/javascript/map-init.js"></script>
    <!--====== Noscript ======-->
    <noscript>
        <div class="app-setting">

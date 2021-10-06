@@ -17,10 +17,12 @@ class Users extends Controller
       }
 
 
-      $data = ['title' => 'Daily Report'];
+      $data = ['title' => 'Lewilis Technology Services'];
 
       $this->view('users/index', $data);
     }
+
+
 
     public function resetpage()
     {
@@ -31,9 +33,25 @@ class Users extends Controller
       }
 
 
-      $data = ['title' => 'Daily Report'];
+      $data = ['title' => 'Lewilis Technology Services'];
 
       $this->view('users/resetpage', $data);
+    }
+
+    public function signup()
+    {
+
+      $data = ['title' => 'Lewilis Technology Services'];
+
+      $this->view('users/signup', $data);
+    }
+
+    public function recovery()
+    {
+
+      $data = ['title' => 'Lewilis Technology Services'];
+
+      $this->view('users/recovery', $data);
     }
 
     public function saveProfile()
@@ -44,12 +62,12 @@ class Users extends Controller
         redirect('pages/index');
       }
 
-      $data = ['title'=>'Daily Report'];
+      $data = ['title'=>'Lewilis Technology Services'];
 
       if($_SERVER['REQUEST_METHOD'] == 'POST')
       {
 
-          $data = ['title' => 'Daily Report',
+          $data = ['title' => 'Lewilis Technology Services',
           'id'=>$_SESSION['user_id'],
           'username'=>$_POST['username'],
           'email'=>$_POST['email'],
@@ -108,7 +126,7 @@ class Users extends Controller
       }
 
       
-      $data = ['title' => 'Daily Report', 'email'=>$email];
+      $data = ['title' => 'Lewilis Technology Services', 'email'=>$email];
 
       $this->view('users/reset', $data);
     }
@@ -121,12 +139,12 @@ class Users extends Controller
       }
 
       
-      $data = ['title' => 'Daily Report'];
+      $data = ['title' => 'Lewilis Technology Services'];
 
       if(isset($_POST['reset-pwd']) && $_SERVER['REQUEST_METHOD'] == 'POST'){
         $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
-        $data = ['title' => 'Daily Report', 'pwd1'=>htmlspecialchars($_POST['passwordnew']),
+        $data = ['title' => 'Lewilis Technology Services', 'pwd1'=>htmlspecialchars($_POST['passwordnew']),
         'err'=>'',
         'pwd2'=>htmlspecialchars($_POST['passwordnew-c']),
       ];
@@ -189,7 +207,7 @@ class Users extends Controller
       $db = $this->userModel->getDatabaseConnection();
   
       $data = [
-        "title" => "Daily Report",
+        "title" => "Lewilis Technology Services",
         "rows" => $numRows,
         "mail" => $userMail,
         "token" => $token,
@@ -212,7 +230,7 @@ class Users extends Controller
          redirect('pages/index');
        }
  
-         $data = ['title'=>'Daily Report'];
+         $data = ['title'=>'Lewilis Technology Services'];
  
          if(isset($_POST['login']) && $_SERVER['REQUEST_METHOD'] == 'POST')
          {
@@ -221,7 +239,7 @@ class Users extends Controller
              //init data
              $data = 
              [
-               'title' => 'Daily Report',
+               'title' => 'Lewilis Technology Services',
                'err' => '',
                'username' => htmlspecialchars($_POST['username']),
                'password' =>htmlspecialchars($_POST['password']),
@@ -275,7 +293,7 @@ class Users extends Controller
              //init data
              $data = 
              [
-               'title' => 'Daily Report',
+               'title' => 'Lewilis Technology Services',
                'err' => '',
                'username' => '',
                'password' => '',
@@ -295,13 +313,13 @@ class Users extends Controller
       redirect('pages/index');
       }
 
-      $data = ['title'=>'Daily Report'];
+      $data = ['title'=>'Lewilis Technology Services'];
 
       if(isset($_POST['recover-email']) && $_SERVER['REQUEST_METHOD'] == 'POST')
       {
           $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
-          $data = ['title' => 'Daily Report',
+          $data = ['title' => 'Lewilis Technology Services',
           'err'=>'',
          'username-recover' => htmlspecialchars($_POST['username-recover'])
         ];
@@ -330,7 +348,7 @@ class Users extends Controller
       }  
       else
       {
-        $data = ['title' => 'Daily Report',
+        $data = ['title' => 'Lewilis Technology Services',
           'err'=>'',
          'username-recover' => ''
         ];

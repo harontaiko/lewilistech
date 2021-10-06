@@ -64,7 +64,7 @@
                                                 </li>
                                                 <li>
 
-                                                    <a href="<?php echo URLROOT; ?>/pages/account">Account</a>
+                                                    <a href="<?php echo URLROOT; ?>/users/account">Account</a>
                                                 </li>
                                                 <li>
 

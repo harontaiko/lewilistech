@@ -28,4 +28,20 @@
 
     <!--====== App ======-->
     <link rel="stylesheet" href="<?php echo URLROOT ?>/public/stylesheets/css/app.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S9PEWDP7X8"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-S9PEWDP7X8');
+    </script>
+    <a href="https://api.whatsapp.com/send?phone=254710577667&text=Hi%2C+i+am+making+an+inquiry+from+lewilistechnolgyservice.co.ke."
+        class="float" target="_blank">
+        <i class="fab fa-whatsapp my-float"></i>
+    </a>
 </head>

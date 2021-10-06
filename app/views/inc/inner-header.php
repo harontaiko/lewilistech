@@ -52,21 +52,21 @@
                                       <ul style="width:120px">
                                           <li>
 
-                                              <a href="<?php echo URLROOT; ?>/pages/account"><i
+                                              <a href="<?php echo URLROOT; ?>/users/account"><i
                                                       class="fas fa-user-circle u-s-m-r-6"></i>
 
                                                   <span>Account</span></a>
                                           </li>
                                           <li>
 
-                                              <a href="<?php echo URLROOT; ?>/pages/signup"><i
+                                              <a href="<?php echo URLROOT; ?>/users/signup"><i
                                                       class="fas fa-user-plus u-s-m-r-6"></i>
 
                                                   <span>Signup</span></a>
                                           </li>
                                           <li>
 
-                                              <a href="<?php echo URLROOT; ?>/pages/login"><i
+                                              <a href="<?php echo URLROOT; ?>/users/login"><i
                                                       class="fas fa-lock u-s-m-r-6"></i>
 
                                                   <span>log in</span></a>
@@ -426,17 +426,17 @@
                                               <ul style="width:200px">
                                                   <li>
 
-                                                      <a href="<?php echo URLROOT; ?>/pages/login">Signin / Already
+                                                      <a href="<?php echo URLROOT; ?>/users/login">Signin / Already
                                                           Registered</a>
                                                   </li>
                                                   <li>
 
-                                                      <a href="<?php echo URLROOT; ?>/pages/signup">Signup /
+                                                      <a href="<?php echo URLROOT; ?>/users/signup">Signup /
                                                           Register</a>
                                                   </li>
                                                   <li>
 
-                                                      <a href="<?php echo URLROOT; ?>/pages/recover">Lost Password</a>
+                                                      <a href="<?php echo URLROOT; ?>/users/recovery">Lost Password</a>
                                                   </li>
                                               </ul>
                                               <!--====== End - Dropdown ======-->
