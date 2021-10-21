@@ -16,7 +16,7 @@ class Pages extends Controller
        $this->Login();
       }  */
 
-      $data = ['title'=>'Daily Report'];
+      $data = ['title'=>'Lewilis Technology Services'];
 
       $this->view('pages/index', $data);
     }
@@ -27,7 +27,7 @@ class Pages extends Controller
        $this->Login();
       }  */
 
-      $data = ['title'=>'Daily Report'];
+      $data = ['title'=>'Lewilis Technology Services'];
 
       $this->view('pages/about', $data);
     }
@@ -38,9 +38,42 @@ class Pages extends Controller
        $this->Login();
       }  */
 
-      $data = ['title'=>'Daily Report'];
+      $data = ['title'=>'Lewilis Technology Services'];
 
       $this->view('pages/contact', $data);
+    }
+
+    public function cart()
+    {
+    /*   if (!isset($_SESSION["user_id"])) {
+       $this->Login();
+      }  */
+
+      $data = ['title'=>'Lewilis Technology Services'];
+
+      $this->view('pages/cart', $data);
+    }
+
+    public function wishlist()
+    {
+    /*   if (!isset($_SESSION["user_id"])) {
+       $this->Login();
+      }  */
+
+      $data = ['title'=>'Lewilis Technology Services'];
+
+      $this->view('pages/wishlist', $data);
+    }
+
+    public function faqs()
+    {
+    /*   if (!isset($_SESSION["user_id"])) {
+       $this->Login();
+      }  */
+
+      $data = ['title'=>'Lewilis Technology Services'];
+
+      $this->view('pages/faqs', $data);
     }
 
 
@@ -54,7 +87,7 @@ class Pages extends Controller
     public function Login()
     {
       $data = [
-        "title" => "Daily Report",  
+        "title" => "Lewilis Technology Services",  
       ];
       redirect("users/index");
     }

@@ -2,7 +2,7 @@
 session_start();
 
 
-//db params
+//db params admin123
 DEFINE('DB_HOST', 'localhost');
 DEFINE('DB_USER', 'lewilis');
 DEFINE('DB_PASS', 'Gazaslim5');
@@ -19,6 +19,8 @@ define("MAIL_PORT", "");
 define('APPROOT', dirname(dirname(__FILE__)));
 
 define('URLROOT', 'http://localhost/lewilis');
+
+define('ADMINROOT', 'http://localhost/lewilis/lewis');
 //site name
 define('SITENAME', 'Lewilis Technology Services');
 

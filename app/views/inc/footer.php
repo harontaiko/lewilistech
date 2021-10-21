@@ -98,11 +98,11 @@
                                                 </li>
                                                 <li>
 
-                                                    <a href="<?php echo URLROOT; ?>/pages/sitemap">Sitemap</a>
+                                                    <a href="<?php echo URLROOT; ?>/pages/faqs">Faqs</a>
                                                 </li>
                                                 <li>
 
-                                                    <a href="<?php echo URLROOT; ?>/pages/delivery">Delivery</a>
+                                                    <a href="<?php echo URLROOT; ?>/pages/order">Delivery</a>
                                                 </li>
                                                 <li>
 
@@ -175,8 +175,8 @@
                                         <li><i class="fab fa-cc-paypal"></i></li>
                                         <li><i class="fab fa-cc-mastercard"></i></li>
                                         <li><i class="fab fa-cc-visa"></i></li>
-                                        <li><i class="fab fa-cc-discover"></i></li>
-                                        <li><i class="fab fa-cc-amex"></i></li>
+                                        <li><img src="<?php echo URLROOT; ?>/public/images/mpesa.png" alt="" class="">
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

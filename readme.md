@@ -11,6 +11,8 @@ Ecommerce website, built on PHP OOP and Js, DB used, `SQL`
 
 - credit card billing
 
+- Admin
+
 #### **_INSTALL_**
 
 - Head to the config file and fil in the database params
@@ -21,3 +23,7 @@ Ecommerce website, built on PHP OOP and Js, DB used, `SQL`
 - `uploads moved to app folder` to avoid errors
 
 #### To do
+
+- re instate newsletter but based on cookies
+- search brings in shop 2, if no search post are loaded
+- change `lewilis in header` to `public_html in remote server`
