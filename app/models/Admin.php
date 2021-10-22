@@ -111,13 +111,13 @@ class Admin
 
      public function saveProduct($data)
      {
-       $fields = array('name', 'price', 'description', 'stock', 'color', 'weight', 'model', 'discount', 'image', 'date_created', 'time_created', 'created_by');
+       $fields = array('name', 'price', 'description', 'stock', 'color', 'weight', 'model', 'category', 'sub_category', 'discount', 'image', 'date_created', 'time_created', 'created_by');
  
-       $placeholders = array('?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?');
+       $placeholders = array('?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?');
  
-       $bindersCountNew = "ssssssssssss";
+       $bindersCountNew = "ssssssssssssss";
  
-       $values = array($data['name'], $data['price'], $data['description'], $data['stock'], $data['color'], $data['weight'], $data['model'], $data['discount'], $data['imagename'], $data['date'], $data['time'], $data['creator']);
+       $values = array($data['name'], $data['price'], $data['description'], $data['stock'], $data['color'], $data['weight'], $data['model'], $data['category'], $data['sub'], $data['discount'], $data['imagename'], $data['date'], $data['time'], $data['creator']);
        
        try {
            Insert(
@@ -137,13 +137,13 @@ class Admin
 
      public function saveProductNull($data)
      {
-        $fields = array('name', 'price', 'description', 'stock', 'color', 'weight', 'model', 'discount', 'date_created', 'time_created', 'created_by');
+        $fields = array('name', 'price', 'description', 'stock', 'color', 'weight', 'model', 'category', 'sub_category', 'discount', 'date_created', 'time_created', 'created_by');
  
-        $placeholders = array('?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?');
+        $placeholders = array('?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?');
   
-        $bindersCountNew = "ssssssssssss";
+        $bindersCountNew = "ssssssssssssss";
   
-        $values = array($data['name'], $data['price'], $data['description'], $data['stock'], $data['color'], $data['weight'], $data['model'], $data['discount'], $data['date'], $data['time'], $data['creator']);
+        $values = array($data['name'], $data['price'], $data['description'], $data['stock'], $data['color'], $data['weight'], $data['model'], $data['category'], $data['sub'], $data['discount'], $data['date'], $data['time'], $data['creator']);
  
        try {
            Insert(

@@ -181,7 +181,7 @@
                                         <div class="product-o__wrap">
 
                                             <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                                href="product-detail.html">
+                                                href="<?php echo URLROOT ?>/product-detail/id">
 
                                                 <img class="aspect__img"
                                                     src="<?php echo URLROOT; ?>/public/images/images/products/dell_7240corei5.jpeg"
@@ -223,7 +223,8 @@
 
                                         <span class="product-o__name">
 
-                                            <a href="product-detail.html">Dell 7240 Core i5</a></span>
+                                            <a href="<?php echo URLROOT ?>/product-detail/id">Dell 7240 Core
+                                                i5</a></span>
                                         <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                                 class="fas fa-star"></i><i class="fas fa-star"></i><i
                                                 class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -241,7 +242,7 @@
                                         <div class="product-o__wrap">
 
                                             <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                                href="product-detail.html">
+                                                href="<?php echo URLROOT ?>/product-detail/id">
 
                                                 <img class="aspect__img"
                                                     src="<?php echo URLROOT; ?>/public/images/images/products/lenovo_x1carboncorei5.jpeg"
@@ -283,7 +284,8 @@
 
                                         <span class="product-o__name">
 
-                                            <a href="product-detail.html">Lenovo x1 Carbon Core i5</a></span>
+                                            <a href="<?php echo URLROOT ?>/product-detail/id">Lenovo x1 Carbon Core
+                                                i5</a></span>
                                         <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                                 class="fas fa-star"></i><i class="fas fa-star"></i><i
                                                 class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -301,7 +303,7 @@
                                         <div class="product-o__wrap">
 
                                             <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                                href="product-detail.html">
+                                                href="<?php echo URLROOT ?>/product-detail/id">
 
                                                 <img class="aspect__img"
                                                     src="<?php echo URLROOT; ?>/public/images/images/products/lenovo_x250corei5.jpeg"
@@ -343,7 +345,8 @@
 
                                         <span class="product-o__name">
 
-                                            <a href="product-detail.html">Lenovo x250 Core i5</a></span>
+                                            <a href="<?php echo URLROOT ?>/product-detail/id">Lenovo x250 Core
+                                                i5</a></span>
                                         <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                                 class="fas fa-star"></i><i class="fas fa-star"></i><i
                                                 class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -361,7 +364,7 @@
                                         <div class="product-o__wrap">
 
                                             <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                                href="product-detail.html">
+                                                href="<?php echo URLROOT ?>/product-detail/id">
 
                                                 <img class="aspect__img"
                                                     src="<?php echo URLROOT; ?>/public/images/images/products/lenovo_t440corei5.jpeg"
@@ -403,7 +406,8 @@
 
                                         <span class="product-o__name">
 
-                                            <a href="product-detail.html">Lenovo t440s Core i5</a></span>
+                                            <a href="<?php echo URLROOT ?>/product-detail/id">Lenovo t440s Core
+                                                i5</a></span>
                                         <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                                 class="fas fa-star"></i><i class="fas fa-star"></i><i
                                                 class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -421,7 +425,7 @@
                                         <div class="product-o__wrap">
 
                                             <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                                href="product-detail.html">
+                                                href="<?php echo URLROOT ?>/product-detail/id">
 
                                                 <img class="aspect__img"
                                                     src="<?php echo URLROOT; ?>/public/images/images/products/hp_210g1nontouch.jpeg"
@@ -463,7 +467,8 @@
 
                                         <span class="product-o__name">
 
-                                            <a href="product-detail.html">Hp 210 G1 Non Touch</a></span>
+                                            <a href="<?php echo URLROOT ?>/product-detail/id">Hp 210 G1 Non
+                                                Touch</a></span>
                                         <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                                 class="fas fa-star"></i><i class="fas fa-star"></i><i
                                                 class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -481,7 +486,7 @@
                                         <div class="product-o__wrap">
 
                                             <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                                href="product-detail.html">
+                                                href="<?php echo URLROOT ?>/product-detail/id">
 
                                                 <img class="aspect__img"
                                                     src="<?php echo URLROOT; ?>/public/images/images/products/hp_x360310pentium.jpeg"
@@ -523,7 +528,8 @@
 
                                         <span class="product-o__name">
 
-                                            <a href="product-detail.html">Hp x360 310 Pentium 4GB/128ssd</a></span>
+                                            <a href="<?php echo URLROOT ?>/product-detail/id">Hp x360 310 Pentium
+                                                4GB/128ssd</a></span>
                                         <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                                 class="fas fa-star"></i><i class="fas fa-star"></i><i
                                                 class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -541,7 +547,7 @@
                                         <div class="product-o__wrap">
 
                                             <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                                href="product-detail.html">
+                                                href="<?php echo URLROOT ?>/product-detail/id">
 
                                                 <img class="aspect__img"
                                                     src="<?php echo URLROOT; ?>/public/images/images/products/hp_250g6corei3.jpeg"
@@ -583,7 +589,8 @@
 
                                         <span class="product-o__name">
 
-                                            <a href="product-detail.html">Hp 250G6 core i3</a></span>
+                                            <a href="<?php echo URLROOT ?>/product-detail/id">Hp 250G6 core
+                                                i3</a></span>
                                         <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                                 class="fas fa-star"></i><i class="fas fa-star"></i><i
                                                 class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -601,7 +608,7 @@
                                         <div class="product-o__wrap">
 
                                             <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                                href="product-detail.html">
+                                                href="<?php echo URLROOT ?>/product-detail/id">
 
                                                 <img class="aspect__img"
                                                     src="<?php echo URLROOT; ?>/public/images/images/products/hp_6460.jpeg"
@@ -643,7 +650,7 @@
 
                                         <span class="product-o__name">
 
-                                            <a href="product-detail.html">Hp 6460 core i5</a></span>
+                                            <a href="<?php echo URLROOT ?>/product-detail/id">Hp 6460 core i5</a></span>
                                         <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                                 class="fas fa-star"></i><i class="fas fa-star"></i><i
                                                 class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -661,7 +668,7 @@
                                         <div class="product-o__wrap">
 
                                             <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                                href="product-detail.html">
+                                                href="<?php echo URLROOT ?>/product-detail/id">
 
                                                 <img class="aspect__img"
                                                     src="<?php echo URLROOT; ?>/public/images/images/products/hp_8460.jpeg"
@@ -703,7 +710,8 @@
 
                                         <span class="product-o__name">
 
-                                            <a href="product-detail.html">Hp 8460/70 Core i5</a></span>
+                                            <a href="<?php echo URLROOT ?>/product-detail/id">Hp 8460/70 Core
+                                                i5</a></span>
                                         <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                                 class="fas fa-star"></i><i class="fas fa-star"></i><i
                                                 class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -721,7 +729,7 @@
                                         <div class="product-o__wrap">
 
                                             <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                                href="product-detail.html">
+                                                href="<?php echo URLROOT ?>/product-detail/id">
 
                                                 <img class="aspect__img"
                                                     src="<?php echo URLROOT; ?>/public/images/images/products/hp_820g1.jpeg"
@@ -763,7 +771,7 @@
 
                                         <span class="product-o__name">
 
-                                            <a href="product-detail.html">Hp 820 G1</a></span>
+                                            <a href="<?php echo URLROOT ?>/product-detail/id">Hp 820 G1</a></span>
                                         <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                                 class="fas fa-star"></i><i class="fas fa-star"></i><i
                                                 class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -781,7 +789,7 @@
                                         <div class="product-o__wrap">
 
                                             <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                                href="product-detail.html">
+                                                href="<?php echo URLROOT ?>/product-detail/id">
 
                                                 <img class="aspect__img"
                                                     src="<?php echo URLROOT; ?>/public/images/images/products/hp_210g1corei3touch.jpeg"
@@ -823,8 +831,8 @@
 
                                         <span class="product-o__name">
 
-                                            <a href="product-detail.html">Hp 210 G1 Core i3 Touch</i><i
-                                                    class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                            <a href="<?php echo URLROOT ?>/product-detail/id">Hp 210 G1 Core i3
+                                                Touch</i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
 
                                                 <span class="product-o__review">(0)</span>
                                     </div>
@@ -839,7 +847,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT; ?>/public/images/images/products/hp_folio9470m.jpeg"
@@ -881,7 +889,8 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Hp Folio 9470m core i5</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">Hp Folio 9470m core
+                                            i5</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -899,7 +908,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT; ?>/public/images/images/products/hp_820g3.jpeg"
@@ -941,7 +950,7 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Hp 820 G3</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">Hp 820 G3</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i
                                             class="far fa-star"></i><i class="far fa-star"></i>
@@ -959,7 +968,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT; ?>/public/images/images/products/laptop_1gbddr3.jpeg"
@@ -1001,7 +1010,7 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">DDR3 1Gb Laptop RAM</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">DDR3 1Gb Laptop RAM</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i
                                             class="far fa-star"></i><i class="far fa-star"></i>
@@ -1019,7 +1028,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT; ?>/public/images/images/products/hp_6460_corei3.jpeg"
@@ -1061,7 +1070,7 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Hp 6460 Core i5</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">Hp 6460 Core i5</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i
                                             class="far fa-star"></i><i class="far fa-star"></i>
@@ -1079,7 +1088,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT; ?>/public/images/images/products/hp_430g2.jpeg"
@@ -1121,7 +1130,7 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Hp 430g2 Core i5</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">Hp 430g2 Core i5</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -1139,7 +1148,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT; ?>/public/images/images/products/laptop_4gbddr3.jpeg"
@@ -1181,7 +1190,7 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">DDR3 4Gb Laptop RAM</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">DDR3 4Gb Laptop RAM</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i
                                             class="far fa-star"></i><i class="far fa-star"></i>
@@ -1199,7 +1208,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT; ?>/public/images/images/products/hp_430g2_touch.jpeg"
@@ -1241,7 +1250,8 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Hp 430g2 Touch Screen</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">Hp 430g2 Touch
+                                            Screen</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -1259,7 +1269,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT; ?>/public/images/images/products/hp_430g2.jpeg"
@@ -1301,7 +1311,7 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Hp 430g2 core i7</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">Hp 430g2 core i7</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -1319,7 +1329,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT; ?>/public/images/images/products/hp_430g3corei3.jpeg"
@@ -1361,7 +1371,7 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Hp 430g3 Core i3</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">Hp 430g3 Core i3</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -1379,7 +1389,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT; ?>/public/images/images/products/hp_430g3corei5.jpeg"
@@ -1421,7 +1431,7 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Hp 430g3 Core i5</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">Hp 430g3 Core i5</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -1439,7 +1449,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT; ?>/public/images/images/products/laptop_11.6screen.jpeg"
@@ -1481,7 +1491,7 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Laptop 11.6' Screen</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">Laptop 11.6' Screen</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i
                                             class="far fa-star"></i><i class="far fa-star"></i>
@@ -1499,7 +1509,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT; ?>/public/images/images/products/laptop_8gbddr3.jpeg"
@@ -1541,7 +1551,7 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">DDR3 8Gb Laptop RAM</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">DDR3 8Gb Laptop RAM</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i
                                             class="far fa-star"></i><i class="far fa-star"></i>
@@ -1559,7 +1569,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT; ?>/public/images/images/products/hp_840g3corei5.jpeg"
@@ -1601,7 +1611,7 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Hp 840g3 core i5</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">Hp 840g3 core i5</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -1619,7 +1629,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT ?>/public/images/images/products/hp_810g3revolve.jpeg"
@@ -1661,7 +1671,8 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Hp 810g3 Revolve Core i5</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">Hp 810g3 Revolve Core
+                                            i5</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -1679,7 +1690,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT; ?>/public/images/images/products/laptop_12.1screen.jpeg"
@@ -1721,7 +1732,7 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Laptop 12.1' Screen</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">Laptop 12.1' Screen</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i
                                             class="far fa-star"></i><i class="far fa-star"></i>
@@ -1739,7 +1750,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT ?>/public/images/images/products/laptop_battery.jpeg"
@@ -1781,7 +1792,7 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Laptop battery
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">Laptop battery
                                             hp/lenovo/dell/toshiba/acer</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
@@ -1800,7 +1811,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT ?>/public/images/images/products/lenovo_x260corei5.jpeg"
@@ -1842,7 +1853,7 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Lenovo X260 Core i5</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">Lenovo X260 Core i5</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -1860,7 +1871,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT; ?>/public/images/images/products/laptop_15.6screen.jpeg"
@@ -1902,7 +1913,7 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Laptop 15.6' Screen</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">Laptop 15.6' Screen</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i
                                             class="far fa-star"></i><i class="far fa-star"></i>
@@ -1920,7 +1931,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT ?>/public/images/images/products/lenovo_x1carboncorei7.jpeg"
@@ -1962,7 +1973,8 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Lenovo X1 Carbon Core i7</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">Lenovo X1 Carbon Core
+                                            i7</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -1980,7 +1992,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT; ?>/public/images/images/products/laptop_14.0screen.jpeg"
@@ -2022,7 +2034,7 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Laptop 14.0' Screen</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">Laptop 14.0' Screen</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i
                                             class="far fa-star"></i><i class="far fa-star"></i>
@@ -2040,7 +2052,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT ?>/public/images/images/products/dell_3340corei3.jpeg"
@@ -2082,7 +2094,7 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Dell 3340 Core i3</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">Dell 3340 Core i3</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -2100,7 +2112,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT; ?>/public/images/images/products/dell_7240corei7.jpeg"
@@ -2142,7 +2154,7 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Dell 7240 Core i7</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">Dell 7240 Core i7</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i
                                             class="far fa-star"></i><i class="far fa-star"></i>
@@ -2160,7 +2172,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT; ?>/public/images/images/products/laptop_4gbddr4.jpeg"
@@ -2202,7 +2214,7 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">DDR4 4gb Laptop RAM</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">DDR4 4gb Laptop RAM</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i
                                             class="far fa-star"></i><i class="far fa-star"></i>
@@ -2220,7 +2232,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT ?>/product-detail/id">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT; ?>/public/images/images/products/laptop_13.3screen.jpeg"
@@ -2262,7 +2274,7 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Laptop 13.3' Screen</a></span>
+                                        <a href="<?php echo URLROOT ?>/product-detail/id">Laptop 13.3' Screen</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i
                                             class="far fa-star"></i><i class="far fa-star"></i>

@@ -41,18 +41,17 @@
                                                                     <a href="#!">Edit</a>
                                                                 </div>
 
-                                                                <?php while($admin = $data['admin']->fetch_assoc()): ?>
                                                                 <span
-                                                                    class="dash__text"><?php $admin['username'] ?></span>
+                                                                    class="dash__text"><?php echo  $data['username'] ?></span>
 
-                                                                <span class="dash__text"><?php $admin['email'] ?></span>
+                                                                <span
+                                                                    class="dash__text"><?php echo $data['email'] ?></span>
 
                                                                 <div class="dash__link dash__link--secondary u-s-m-t-8">
 
                                                                     <img src="<?php echo URLROOT ?>/public/images/images/avataaars.png"
                                                                         class="rounded-img" alt="admin">
                                                                 </div>
-                                                                <?php endwhile ?>
                                                             </div>
                                                         </div>
                                                     </div>

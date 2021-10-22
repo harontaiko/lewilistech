@@ -49,8 +49,9 @@
                                             <h1 class="dash__h1 u-s-m-b-14">Add Products</h1>
 
                                             <span class="dash__text u-s-m-b-30">create new products to sell</span>
-                                            <p class="gl-link"><?php echo isset($data['err']) ? $data['err'] : ''; ?>
-                                            <p class="success-link">
+                                            <p class="gl-link alert-msg">
+                                                <?php echo isset($data['err']) ? $data['err'] : ''; ?>
+                                            <p class="success-link alert-msg">
                                                 <?php echo isset($data['succ']) ? $data['succ'] : ''; ?>
                                             </p>
                                             <form enctype="multipart/form-data" class="dash-track-order" method="POST"
@@ -63,7 +64,8 @@
 
                                                         <input class="input-text input-text--primary-style" type="text"
                                                             id="product-name" name="product-name"
-                                                            placeholder="e.g. Hp 250 G6 Core i3" required>
+                                                            placeholder="e.g. Hp 250 G6 Core i3" required
+                                                            value="<?php echo isset($data['name']) ? $data['name'] : ''; ?>">
                                                     </div>
                                                     <div class="u-s-m-b-30">
 
@@ -71,7 +73,8 @@
 
                                                         <input class="input-text input-text--primary-style" type="text"
                                                             id="product-price" name="product-price"
-                                                            placeholder="e.g. 20000 dont use commas" required>
+                                                            placeholder="e.g. 20000 dont use commas" required
+                                                            value="<?php echo isset($data['price']) ? $data['price'] : ''; ?>">
                                                     </div>
                                                 </div>
                                                 <div class="gl-inline">
@@ -83,7 +86,7 @@
                                                         <textarea class="input-text input-text--primary-style" id=""
                                                             cols="30" rows="30" id="product-desc" name="product-desc"
                                                             placeholder="e.g. elegant, stylish laptop...."
-                                                            required></textarea>
+                                                            required><?php echo isset($data['description']) ? $data['description'] : ''; ?></textarea>
 
                                                     </div>
                                                     <div class="u-s-m-b-30">
@@ -92,7 +95,8 @@
 
                                                         <input class="input-text input-text--primary-style"
                                                             type="number" id="product-stock" name="product-stock"
-                                                            placeholder="qty in stock" required>
+                                                            placeholder="qty in stock" required
+                                                            value="<?php echo isset($data['stock']) ? $data['stock'] : ''; ?>">
                                                     </div>
                                                 </div>
                                                 <div class="gl-inline">
@@ -103,7 +107,8 @@
 
                                                         <input class="input-text input-text--primary-style" type="text"
                                                             id="product-color" name="product-color"
-                                                            placeholder="e.g. silver black">
+                                                            placeholder="e.g. silver black"
+                                                            value="<?php echo isset($data['color']) ? $data['color'] : ''; ?>">
                                                     </div>
                                                     <div class="u-s-m-b-30">
 
@@ -111,7 +116,44 @@
 
                                                         <input class="input-text input-text--primary-style"
                                                             type="number" id="product-weight" name="product-weight"
-                                                            placeholder="in kgs">
+                                                            placeholder="in kgs"
+                                                            value="<?php echo isset($data['weight']) ? $data['weight'] : ''; ?>">
+                                                    </div>
+                                                </div>
+                                                <div class="gl-inline">
+                                                    <div class="u-s-m-b-30">
+
+                                                        <label class="gl-label" for="product-category">Product Category
+                                                            *</label>
+
+                                                        <select class="input-text input-text--primary-style"
+                                                            name="product-category" id="product-category" required>
+                                                            <option value="">Select Category</option>
+                                                            <option value="electronics">Electronics</option>
+                                                            <option value="software">Software</option>
+                                                            <option value="bags-other-categories">Bags & Other
+                                                                Categories</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="u-s-m-b-30">
+
+                                                        <label class="gl-label" for="product-sub">Product
+                                                            Sub-Category *</label>
+
+                                                        <select class="input-text input-text--primary-style"
+                                                            name="product-sub" id="product-sub" required>
+                                                            <option value="">Select Sub category</option>
+                                                            <option value="propreitart">propreitary software</option>
+                                                            <option value="antivirus">Antivirus software</option>
+                                                            <option value="drivers">Drivers</option>
+                                                            <option value="hardware">Hardware</option>
+                                                            <option value="peripheral">Peripherals</option>
+                                                            <option value="laptop">Laptops</option>
+                                                            <option value="desktop">Desktops</option>
+                                                            <option value="bags">bags</option>
+                                                            <option value="holders">holders</option>
+                                                            <option value="others">other</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                                 <div class="gl-inline">
@@ -120,9 +162,10 @@
                                                         <label class="gl-label" for="product-disc">Discount %
                                                             *</label>
 
-                                                        <input class="input-text input-text--primary-style" type="text"
-                                                            id="product-disc" name="product-disc"
-                                                            placeholder="e.g. 0 dont use %">
+                                                        <input class="input-text input-text--primary-style"
+                                                            type="number" id="product-disc" name="product-disc"
+                                                            placeholder="e.g. 0 dont use %"
+                                                            value="<?php echo isset($data['discount']) ? $data['discount'] : ''; ?>">
                                                     </div>
                                                     <div class="u-s-m-b-30">
 
@@ -139,7 +182,8 @@
 
                                                     <input class="input-text input-text--primary-style" type="text"
                                                         id="product-model" name="product-model"
-                                                        placeholder="hp/dell/toshiba/adidas">
+                                                        placeholder="hp/dell/toshiba/adidas"
+                                                        value="<?php echo isset($data['model']) ? $data['model'] : ''; ?>">
                                                 </div>
                                                 <div class="gl-inline">
                                                     <div class="u-s-m-b-30">

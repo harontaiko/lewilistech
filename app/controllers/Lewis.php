@@ -114,7 +114,12 @@ class Lewis extends Controller
 
       $admin = $this->lewisModel->getAdminData();
 
-      $data = ['title'=>'Lewilis Technology Services | Admin', 'db'=>$db, 'admin'=>$admin];
+      while($me = $admin->fetch_assoc()){
+        $username = $me['username'];
+        $email = $me['email'];
+      }
+
+      $data = ['title'=>'Lewilis Technology Services | Admin', 'db'=>$db, 'username'=>$username, 'email'=>$email];
 
       $this->view('lewis/home', $data);
     }
@@ -126,7 +131,17 @@ class Lewis extends Controller
         redirect('lewis/index');
       }
 
-      $data = ['title'=>'Lewilis Technology Services | Admin'];
+      $admin = $this->lewisModel->getAdminData();
+
+      while($me = $admin->fetch_assoc()){
+        $username = $me['username'];
+        $firstname = $me['first_name'];
+        $lastname = $me['last_name'];
+        $date = $me['date_created'];
+        $email = $me['email'];
+      }
+
+      $data = ['title'=>'Lewilis Technology Services | Admin', 'username'=>$username, 'fname'=>$firstname, 'lname'=>$lastname, 'date'=>$date, 'email'=>$email];
 
       $this->view('lewis/profile', $data);
     }
@@ -222,6 +237,8 @@ class Lewis extends Controller
     public function addProduct()
     {  
 
+      $products = $this->lewisModel->getProductsData();
+
       if(isset($_POST['add-product']) && $_SERVER['REQUEST_METHOD'] == 'POST'){
       
       $file = $_FILES['product-image'];
@@ -242,12 +259,40 @@ class Lewis extends Controller
           
           $productName = $_POST['product-name'];
           $productPrice = $_POST['product-price'];
+          $productCategory = $_POST['product-category'];
+          $productsub = $_POST['product-sub'];
           $productDesc = $_POST['product-desc'];
           $productStock = $_POST['product-stock'];
           $productColor = $_POST['product-color'];
           $productWeight = $_POST['product-weight'];
           $productModel = $_POST['product-model'];
           $productDiscount = $_POST['product-disc'];
+          
+
+          $data = [
+            'title' => 'Lewilis Technology Services | Admin',
+            'err'=>'',
+            'succ'=>'',
+            'date' => date('Y-m-d', time()),
+            'time' => date('H:i:s T', time()),
+            'ip' => get_ip_address(),
+            'category'=>$productCategory,
+            'sub'=>$productsub,
+            'product'=>$products,
+            'name' => $productName,
+            'stock' => $productStock,
+            'price' => $productPrice,
+            'color' => $productColor,
+            'model' => $productModel,
+            'weight' => $productWeight,
+            'discount' => $productDiscount,
+            'description' => $productDesc,
+            'imagename' => $photo,
+            'creator' => $_SESSION['user_name'],
+            'destination' => $fileDestination,
+            'tempname' => $fileTmpName,
+          ];
+
 
           if($this->lewisModel->getItemByName($productName) || $this->lewisModel->getImageByName($photo)){
             $data["err"] =
@@ -263,6 +308,9 @@ class Lewis extends Controller
             'date' => date('Y-m-d', time()),
             'time' => date('H:i:s T', time()),
             'ip' => get_ip_address(),
+            'category'=>$productCategory,
+            'sub'=>$productsub,
+            'product'=>$products,
             'name' => $productName,
             'stock' => $productStock,
             'price' => $productPrice,
@@ -298,6 +346,8 @@ class Lewis extends Controller
         {
           $productName = $_POST['product-name'];
           $productPrice = $_POST['product-price'];
+          $productCategory = $_POST['product-category'];
+          $productsub = $_POST['product-sub'];
           $productDesc = $_POST['product-desc'];
           $productStock = $_POST['product-stock'];
           $productColor = $_POST['product-color'];
@@ -318,6 +368,9 @@ class Lewis extends Controller
               'date' => date('Y-m-d', time()),
               'time' => date('H:i:s T', time()),
               'ip' => get_ip_address(),
+              'category'=>$productCategory,
+              'sub'=>$productsub,
+              'product'=>$products,
               'name' => $productName,
               'stock' => $productStock,
               'price' => $productPrice,
@@ -350,6 +403,8 @@ class Lewis extends Controller
         
         $productName = $_POST['product-name'];
         $productPrice = $_POST['product-price'];
+        $productCategory = $_POST['product-category'];
+        $productsub = $_POST['product-sub'];
         $productDesc = $_POST['product-desc'];
         $productStock = $_POST['product-stock'];
         $productColor = $_POST['product-color'];
@@ -368,6 +423,9 @@ class Lewis extends Controller
             'date' => date('Y-m-d', time()),
             'time' => date('H:i:s T', time()),
             'ip' => get_ip_address(),
+            'category'=>$productCategory,
+            'sub'=>$productsub,
+            'product'=>$products,
             'name' => $productName,
             'stock' => $productStock,
             'price' => $productPrice,
@@ -410,12 +468,12 @@ class Lewis extends Controller
       // Logout & Destroy Session
       public function logout()
       {
-        sleep(0.5);
         unset($_SESSION["user_id"]);
         unset($_SESSION["user_email"]);
         unset($_SESSION["user_name"]);
         session_destroy();
-            
+           
+        sleep(0.5);
         redirect("lewis/index");           
       }
           // Create Session With User Info

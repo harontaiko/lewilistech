@@ -179,8 +179,7 @@
                                                   <ul>
                                                       <li class="js-active">
 
-                                                          <a href="shop-side-version-2.html"><i
-                                                                  class="fas fa-tv u-s-m-r-6"></i>
+                                                          <a href="#!"><i class="fas fa-tv u-s-m-r-6"></i>
 
                                                               <span>Electronics</span></a>
 
@@ -188,10 +187,17 @@
                                                       </li>
                                                       <li>
 
-                                                          <a href="shop-side-version-2.html"><i
-                                                                  class="fas fa-female u-s-m-r-6"></i>
+                                                          <a href="#!"><i class="fas fa-female u-s-m-r-6"></i>
 
                                                               <span>Software</span></a>
+
+                                                          <span class="js-menu-toggle"></span>
+                                                      </li>
+                                                      <li>
+
+                                                          <a href="#!"><i class="fas fa-female u-s-m-r-6"></i>
+
+                                                              <span>Bags & Other Accessories</span></a>
 
                                                           <span class="js-menu-toggle"></span>
                                                       </li>
@@ -208,24 +214,24 @@
                                                           <ul>
                                                               <li class="mega-list-title">
 
-                                                                  <a href="shop-side-version-2.html">Computer
+                                                                  <a href="#!">Computer
                                                                       hardware</a>
                                                               </li>
                                                               <li>
 
-                                                                  <a href="shop-side-version-2.html">RAM</a>
+                                                                  <a href="#!">RAM</a>
                                                               </li>
                                                               <li>
 
-                                                                  <a href="shop-side-version-2.html">HARD DRIVES</a>
+                                                                  <a href="#!">HARD DRIVES</a>
                                                               </li>
                                                               <li>
 
-                                                                  <a href="shop-side-version-2.html">WIFI MODULE</a>
+                                                                  <a href="#!">WIFI MODULE</a>
                                                               </li>
                                                               <li>
 
-                                                                  <a href="shop-side-version-2.html">SCREENS</a>
+                                                                  <a href="#!">SCREENS</a>
                                                               </li>
                                                           </ul>
                                                       </div>
@@ -233,23 +239,71 @@
                                                           <ul>
                                                               <li class="mega-list-title">
 
-                                                                  <a href="shop-side-version-2.html">PERIPHERALS</a>
+                                                                  <a href="#!">PERIPHERALS</a>
                                                               </li>
                                                               <li>
 
-                                                                  <a href="shop-side-version-2.html">MOUSE</a>
+                                                                  <a href="#!">MOUSE</a>
                                                               </li>
                                                               <li>
 
-                                                                  <a href="shop-side-version-2.html">KEYBOARDS</a>
+                                                                  <a href="#!">KEYBOARDS</a>
                                                               </li>
                                                               <li>
 
-                                                                  <a href="shop-side-version-2.html">CHARGERS</a>
+                                                                  <a href="#!">CHARGERS</a>
                                                               </li>
                                                               <li>
 
-                                                                  <a href="shop-side-version-2.html">OTHERS</a>
+                                                                  <a href="#!">OTHERS</a>
+                                                              </li>
+                                                          </ul>
+                                                      </div>
+                                                      <div class="col-lg-3">
+                                                          <ul>
+                                                              <li class="mega-list-title">
+
+                                                                  <a href="#!">LAPTOPS</a>
+                                                              </li>
+                                                              <li>
+
+                                                                  <a href="#!">DELL</a>
+                                                              </li>
+                                                              <li>
+
+                                                                  <a href="#!">HEWLETTE PACKARD</a>
+                                                              </li>
+                                                              <li>
+
+                                                                  <a href="#!">TOSHIBA</a>
+                                                              </li>
+                                                              <li>
+
+                                                                  <a href="#!">ACER</a>
+                                                              </li>
+                                                          </ul>
+                                                      </div>
+                                                      <div class="col-lg-3">
+                                                          <ul>
+                                                              <li class="mega-list-title">
+
+                                                                  <a href="#!">DESKTOPS</a>
+                                                              </li>
+                                                              <li>
+
+                                                                  <a href="#!">DELL</a>
+                                                              </li>
+                                                              <li>
+
+                                                                  <a href="#!">Hp</a>
+                                                              </li>
+                                                              <li>
+
+                                                                  <a href="#!">SERVERS</a>
+                                                              </li>
+                                                              <li>
+
+                                                                  <a href="#!">ACER</a>
                                                               </li>
                                                           </ul>
                                                       </div>
@@ -269,7 +323,7 @@
                                                       <div class="col-lg-6 mega-image">
                                                           <div class="mega-banner">
 
-                                                              <a class="u-d-block" href="shop-side-version-2.html">
+                                                              <a class="u-d-block" href="#!">
 
                                                                   <img class="u-img-fluid u-d-block"
                                                                       src="images/banners/banner-mega-1.jpg" alt=""></a>
@@ -278,7 +332,7 @@
                                                       <div class="col-lg-6 mega-image">
                                                           <div class="mega-banner">
 
-                                                              <a class="u-d-block" href="shop-side-version-2.html">
+                                                              <a class="u-d-block" href="#!">
 
                                                                   <img class="u-img-fluid u-d-block"
                                                                       src="images/banners/banner-mega-2.jpg" alt=""></a>
@@ -288,29 +342,29 @@
                                                   <!--====== End - Mega Menu Row ======-->
                                                   <br>
 
-                                                  <!--====== Mega Menu Row ======-->
+                                                  <!--====== software ======-->
                                                   <div class="row">
                                                       <div class="col-lg-3">
                                                           <ul>
                                                               <li class="mega-list-title">
 
-                                                                  <a href="shop-side-version-2.html">PROPERIATARY</a>
+                                                                  <a href="#!">PROPRIETARY</a>
                                                               </li>
                                                               <li>
 
-                                                                  <a href="shop-side-version-2.html">windows</a>
+                                                                  <a href="#!">windows</a>
                                                               </li>
                                                               <li>
 
-                                                                  <a href="shop-side-version-2.html">Adobe suite</a>
+                                                                  <a href="#!">Adobe suite</a>
                                                               </li>
                                                               <li>
 
-                                                                  <a href="shop-side-version-2.html">Office</a>
+                                                                  <a href="#!">Office</a>
                                                               </li>
                                                               <li>
 
-                                                                  <a href="shop-side-version-2.html">Linux</a>
+                                                                  <a href="#!">Linux</a>
                                                               </li>
                                                           </ul>
                                                       </div>
@@ -318,23 +372,23 @@
                                                           <ul>
                                                               <li class="mega-list-title">
 
-                                                                  <a href="shop-side-version-2.html">ANTI VIRUS</a>
+                                                                  <a href="#!">ANTI VIRUS</a>
                                                               </li>
                                                               <li>
 
-                                                                  <a href="shop-side-version-2.html">Kaspersky</a>
+                                                                  <a href="#!">Kaspersky</a>
                                                               </li>
                                                               <li>
 
-                                                                  <a href="shop-side-version-2.html">AVG</a>
+                                                                  <a href="#!">AVG</a>
                                                               </li>
                                                               <li>
 
-                                                                  <a href="shop-side-version-2.html">SMADAV</a>
+                                                                  <a href="#!">SMADAV</a>
                                                               </li>
                                                               <li>
 
-                                                                  <a href="shop-side-version-2.html">MCAFEE</a>
+                                                                  <a href="#!">MCAFEE</a>
                                                               </li>
                                                           </ul>
                                                       </div>
@@ -342,23 +396,131 @@
                                                           <ul>
                                                               <li class="mega-list-title">
 
-                                                                  <a href="shop-side-version-2.html">DRIVERS</a>
+                                                                  <a href="#!">DRIVERS</a>
                                                               </li>
                                                               <li>
 
-                                                                  <a href="shop-side-version-2.html">HP</a>
+                                                                  <a href="#!">HP</a>
                                                               </li>
                                                               <li>
 
-                                                                  <a href="shop-side-version-2.html">DELL</a>
+                                                                  <a href="#!">DELL</a>
                                                               </li>
                                                               <li>
 
-                                                                  <a href="shop-side-version-2.html">MAC</a>
+                                                                  <a href="#!">MAC</a>
                                                               </li>
                                                               <li>
 
-                                                                  <a href="shop-side-version-2.html">TOSHIBA & MORE</a>
+                                                                  <a href="#!">TOSHIBA & MORE</a>
+                                                              </li>
+                                                          </ul>
+                                                      </div>
+
+                                                  </div>
+                                                  <!--====== End - Mega Menu Row ======-->
+                                                  <br>
+
+                                                  <br>
+
+                                              </div>
+                                              <div class="mega-menu-content">
+
+                                                  <!--====== Mega Menu Row ======-->
+                                                  <div class="row">
+                                                      <div class="col-lg-6 mega-image">
+                                                          <div class="mega-banner">
+
+                                                              <a class="u-d-block" href="#!">
+
+                                                                  <img class="u-img-fluid u-d-block"
+                                                                      src="images/banners/banner-mega-1.jpg" alt=""></a>
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-lg-6 mega-image">
+                                                          <div class="mega-banner">
+
+                                                              <a class="u-d-block" href="#!">
+
+                                                                  <img class="u-img-fluid u-d-block"
+                                                                      src="images/banners/banner-mega-2.jpg" alt=""></a>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <!--====== End - Mega Menu Row ======-->
+                                                  <br>
+
+                                                  <!--====== software ======-->
+                                                  <div class="row">
+                                                      <div class="col-lg-3">
+                                                          <ul>
+                                                              <li class="mega-list-title">
+
+                                                                  <a href="#!">BAGS</a>
+                                                              </li>
+                                                              <li>
+
+                                                                  <a href="#!">laptop</a>
+                                                              </li>
+                                                              <li>
+
+                                                                  <a href="#!">satchels</a>
+                                                              </li>
+                                                              <li>
+
+                                                                  <a href="#!"></a>
+                                                              </li>
+                                                              <li>
+
+                                                                  <a href="#!"></a>
+                                                              </li>
+                                                          </ul>
+                                                      </div>
+                                                      <div class="col-lg-3">
+                                                          <ul>
+                                                              <li class="mega-list-title">
+
+                                                                  <a href="#!">HOLDERS</a>
+                                                              </li>
+                                                              <li>
+
+                                                                  <a href="#!">laptop holders</a>
+                                                              </li>
+                                                              <li>
+
+                                                                  <a href="#!"></a>
+                                                              </li>
+                                                              <li>
+
+                                                                  <a href="#!"></a>
+                                                              </li>
+                                                              <li>
+
+                                                                  <a href="#!"></a>
+                                                              </li>
+                                                          </ul>
+                                                      </div>
+                                                      <div class="col-lg-3">
+                                                          <ul>
+                                                              <li class="mega-list-title">
+
+                                                                  <a href="#!">OTHERS</a>
+                                                              </li>
+                                                              <li>
+
+                                                                  <a href="#!"></a>
+                                                              </li>
+                                                              <li>
+
+                                                                  <a href="#!"></a>
+                                                              </li>
+                                                              <li>
+
+                                                                  <a href="#!"></a>
+                                                              </li>
+                                                              <li>
+
+                                                                  <a href="#!"></a>
                                                               </li>
                                                           </ul>
                                                       </div>
@@ -610,7 +772,7 @@
 
                                                           <span class="mini-product__category">
 
-                                                              <a href="shop-side-version-2.html">Electronics</a></span>
+                                                              <a href="#!">Electronics</a></span>
 
                                                           <span class="mini-product__name">
 

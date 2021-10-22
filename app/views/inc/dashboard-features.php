@@ -16,11 +16,6 @@
               </li>
               <li>
 
-                  <a <?php if(strpos($_SERVER['REQUEST_URI'], 'lewis/addressbook') !==false): ?>class="dash-active"
-                      <?php endif ?> href="<?php echo ADMINROOT; ?>/addressbook">Addresses</a>
-              </li>
-              <li>
-
                   <a <?php if(strpos($_SERVER['REQUEST_URI'], 'lewis/track') !==false): ?>class="dash-active"
                       <?php endif ?> href="<?php echo ADMINROOT; ?>/track">Track Orders</a>
               </li>
