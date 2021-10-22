@@ -110,7 +110,11 @@ class Lewis extends Controller
         redirect('lewis/index');
       }
 
-      $data = ['title'=>'Lewilis Technology Services | Admin'];
+      $db = $this->lewisModel->getDatabaseConnection();
+
+      $admin = $this->lewisModel->getAdminData();
+
+      $data = ['title'=>'Lewilis Technology Services | Admin', 'db'=>$db, 'admin'=>$admin];
 
       $this->view('lewis/home', $data);
     }

@@ -58,6 +58,21 @@ class Admin
          }
      }
 
+     public function getAdminData()
+     {
+         $query = 'SELECT * FROM lt_admin';
+  
+         $result = SelectCondFree($query, 'lt_admin', $this->db);
+ 
+         $row = $result->get_result();
+ 
+         try {
+             return $row;
+         } catch (Error $e) {
+             return false;
+         }
+     }
+
      public function getProductsData()
      {
          $query = 'SELECT * FROM lt_products ORDER BY id DESC';

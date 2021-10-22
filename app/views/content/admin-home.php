@@ -38,17 +38,21 @@
                                                                 <h2 class="dash__h2 u-s-m-b-8">PERSONAL PROFILE</h2>
                                                                 <div class="dash__link dash__link--secondary u-s-m-b-8">
 
-                                                                    <a href="dash-edit-profile.html">Edit</a>
+                                                                    <a href="#!">Edit</a>
                                                                 </div>
 
-                                                                <span class="dash__text">John Doe</span>
+                                                                <?php while($admin = $data['admin']->fetch_assoc()): ?>
+                                                                <span
+                                                                    class="dash__text"><?php $admin['username'] ?></span>
 
-                                                                <span class="dash__text">johndoe@domain.com</span>
+                                                                <span class="dash__text"><?php $admin['email'] ?></span>
+
                                                                 <div class="dash__link dash__link--secondary u-s-m-t-8">
 
                                                                     <img src="<?php echo URLROOT ?>/public/images/images/avataaars.png"
                                                                         class="rounded-img" alt="admin">
                                                                 </div>
+                                                                <?php endwhile ?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -61,14 +65,14 @@
                                                                 <span class="dash__text-2 u-s-m-b-8">Default Shipping
                                                                     Address</span>
                                                                 <div class="dash__link dash__link--secondary u-s-m-b-8">
-
-                                                                    <a href="dash-address-book.html">Edit</a>
+                                                                    <!-- 
+                                                                    <a href="">Edit</a> -->
                                                                 </div>
 
-                                                                <span class="dash__text">4247 Ashford Drive Virginia -
-                                                                    VA-20006 - USA</span>
+                                                                <span class="dash__text">Moi Avenue, Nairobi Cubes
+                                                                    Exhibition</span>
 
-                                                                <span class="dash__text">(+0) 900901904</span>
+                                                                <span class="dash__text">(+254) 710 577 667</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -76,15 +80,14 @@
                                                         <div
                                                             class="dash__box dash__box--bg-grey dash__box--shadow-2 u-h-100">
                                                             <div class="dash__pad-3">
-                                                                <h2 class="dash__h2 u-s-m-b-8">BILLING ADDRESS</h2>
+                                                                <h2 class="dash__h2 u-s-m-b-8">PAYMENT METHODS</h2>
 
-                                                                <span class="dash__text-2 u-s-m-b-8">Default Billing
-                                                                    Address</span>
+                                                                <span class="dash__text-2 u-s-m-b-8">Default payment
+                                                                    options</span>
 
-                                                                <span class="dash__text">4247 Ashford Drive Virginia -
-                                                                    VA-20006 - USA</span>
+                                                                <span class="dash__text">MPESA, PAYPAL</span>
 
-                                                                <span class="dash__text">(+0) 900901904</span>
+                                                                <span class="dash__text">CREDIT CARD ON DELIVERY</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -121,7 +124,7 @@
                                                                     <span>total ksh</span>
                                                                     <div class="dash__link dash__link--brand">
 
-                                                                        <a href="dash-manage-order.html">MANAGE</a>
+                                                                        <a href="">MANAGE</a>
                                                                     </div>
                                                                 </div>
                                                             </td>
