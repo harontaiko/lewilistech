@@ -229,23 +229,23 @@
                                         <div id="js-product-detail-modal">
                                             <div>
 
-                                                <img class="u-img-fluid" src="images/product/product-d-1.jpg" alt="">
+                                                <img class="u-img-fluid" src="" alt="">
                                             </div>
                                             <div>
 
-                                                <img class="u-img-fluid" src="images/product/product-d-2.jpg" alt="">
+                                                <img class="u-img-fluid" src="" alt="">
                                             </div>
                                             <div>
 
-                                                <img class="u-img-fluid" src="images/product/product-d-3.jpg" alt="">
+                                                <img class="u-img-fluid" src="" alt="">
                                             </div>
                                             <div>
 
-                                                <img class="u-img-fluid" src="images/product/product-d-4.jpg" alt="">
+                                                <img class="u-img-fluid" src="" alt="">
                                             </div>
                                             <div>
 
-                                                <img class="u-img-fluid" src="images/product/product-d-5.jpg" alt="">
+                                                <img class="u-img-fluid" src="" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -253,23 +253,23 @@
                                         <div id="js-product-detail-modal-thumbnail">
                                             <div>
 
-                                                <img class="u-img-fluid" src="images/product/product-d-1.jpg" alt="">
+                                                <img class="u-img-fluid" src="" alt="">
                                             </div>
                                             <div>
 
-                                                <img class="u-img-fluid" src="images/product/product-d-2.jpg" alt="">
+                                                <img class="u-img-fluid" src="" alt="">
                                             </div>
                                             <div>
 
-                                                <img class="u-img-fluid" src="images/product/product-d-3.jpg" alt="">
+                                                <img class="u-img-fluid" src="" alt="">
                                             </div>
                                             <div>
 
-                                                <img class="u-img-fluid" src="images/product/product-d-4.jpg" alt="">
+                                                <img class="u-img-fluid" src="" alt="">
                                             </div>
                                             <div>
 
-                                                <img class="u-img-fluid" src="images/product/product-d-5.jpg" alt="">
+                                                <img class="u-img-fluid" src="" alt="">
                                             </div>
                                         </div>
                                     </div>

@@ -16,7 +16,20 @@ class Pages extends Controller
        $this->Login();
       }  */
 
-      $data = ['title'=>'Lewilis Technology Services'];
+      //GET SLIDERS, DEALS, DEALS OF THE DAY, PRODUCT CATEGORY, ARRIVALS, FEATURED PRODUCTS, 
+      //SPECIAL PRODUCTS, WEEKLY PRODUCTS, FLASH PRODUCTS & BLOGS
+      //ALL PHOTOS TO BE UPLOADED MUST BE THE REQUIRED SIZE
+      $db = $this->pageModel->getDatabaseConnection();
+      $myslides = $this->pageModel->getSliders();
+      $deals = $this->pageModel->getDeals();
+      $dealsOfTheDay = $this->pageModel->getDealsofTheDay();
+      $products = $this->pageModel->getProducts();
+      $arrivals = $this->pageModel->getArrivals();
+      $featured = $this->pageModel->getFeatured();
+      $special = $this->pageModel->getSpecial();
+      $flash = $this->pageModel->getFlash();
+      $weekly = $this->pageModel->getWeekly();
+      $data = ['title'=>'Lewilis Technology Services', 'special'=>$special, 'flash'=>$flash, 'weekly'=>$weekly, 'featured'=>$featured, 'arrivals'=>$arrivals, 'products'=>$products, 'sliderow'=>$myslides, 'daydeals'=>$dealsOfTheDay, 'dealsrow'=>$deals, 'db'=>$db];
 
       $this->view('pages/index', $data);
     }

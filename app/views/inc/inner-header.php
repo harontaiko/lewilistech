@@ -325,8 +325,7 @@
 
                                                               <a class="u-d-block" href="#!">
 
-                                                                  <img class="u-img-fluid u-d-block"
-                                                                      src="images/banners/banner-mega-1.jpg" alt=""></a>
+                                                                  <img class="u-img-fluid u-d-block" src="" alt=""></a>
                                                           </div>
                                                       </div>
                                                       <div class="col-lg-6 mega-image">
@@ -334,8 +333,7 @@
 
                                                               <a class="u-d-block" href="#!">
 
-                                                                  <img class="u-img-fluid u-d-block"
-                                                                      src="images/banners/banner-mega-2.jpg" alt=""></a>
+                                                                  <img class="u-img-fluid u-d-block" src="" alt=""></a>
                                                           </div>
                                                       </div>
                                                   </div>
@@ -433,8 +431,7 @@
 
                                                               <a class="u-d-block" href="#!">
 
-                                                                  <img class="u-img-fluid u-d-block"
-                                                                      src="images/banners/banner-mega-1.jpg" alt=""></a>
+                                                                  <img class="u-img-fluid u-d-block" src="" alt=""></a>
                                                           </div>
                                                       </div>
                                                       <div class="col-lg-6 mega-image">
@@ -442,8 +439,7 @@
 
                                                               <a class="u-d-block" href="#!">
 
-                                                                  <img class="u-img-fluid u-d-block"
-                                                                      src="images/banners/banner-mega-2.jpg" alt=""></a>
+                                                                  <img class="u-img-fluid u-d-block" src="" alt=""></a>
                                                           </div>
                                                       </div>
                                                   </div>

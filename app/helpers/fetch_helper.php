@@ -78,4 +78,297 @@ function findDateMadeById($id, $db)
     } catch (Error $e) {
         return false;
     }
+
+}
+
+//get slider images, 1 thru 9
+function getSlider($position, $db)
+{
+  if($position === "1")
+  {
+    $query = 'SELECT `image` AS slider FROM lt_slider WHERE position=?';
+
+    $binders ="s";
+
+    $params = array('1');
+
+    $result = SelectCond($query, $binders, $params, $db);
+  
+    $row = $result->get_result();
+
+    $rowItem = $row->fetch_assoc();
+
+    $count = isset($rowItem['slider']) ? $rowItem['slider'] : 'slider-1.jpg';
+  
+    try {
+        return $count;
+    } catch (Error $e) {
+        return false;
+    }
+  }
+  else if($position === "2")
+  {
+    $query = 'SELECT `image` AS slider FROM lt_slider WHERE position=?';
+
+    $binders ="s";
+
+    $params = array('2');
+
+    $result = SelectCond($query, $binders, $params, $db);
+  
+    $row = $result->get_result();
+
+    $rowItem = $row->fetch_assoc();
+
+    $count = isset($rowItem['slider']) ? $rowItem['slider'] : 'slider-2.jpg';
+  
+    try {
+        return $count;
+    } catch (Error $e) {
+        return false;
+    }
+  }
+  else if($position === "3")
+  {
+    $query = 'SELECT `image` AS slider FROM lt_slider WHERE position=?';
+
+    $binders ="s";
+
+    $params = array('3');
+
+    $result = SelectCond($query, $binders, $params, $db);
+  
+    $row = $result->get_result();
+
+    $rowItem = $row->fetch_assoc();
+
+    $count = isset($rowItem['slider']) ? $rowItem['slider'] : 'slider-3.jpg';
+  
+    try {
+        return $count;
+    } catch (Error $e) {
+        return false;
+    }
+  }
+  else if($position === "4")
+  {
+    $query = 'SELECT `image` AS slider FROM lt_slider WHERE position=?';
+
+    $binders ="s";
+
+    $params = array('4');
+
+    $result = SelectCond($query, $binders, $params, $db);
+  
+    $row = $result->get_result();
+
+    $rowItem = $row->fetch_assoc();
+
+    $count = isset($rowItem['slider']) ? $rowItem['slider'] : 'slider-4.jpg';
+  
+    try {
+        return $count;
+    } catch (Error $e) {
+        return false;
+    }
+  }
+  else if($position === "5")
+  {
+    $query = 'SELECT `image` AS slider FROM lt_slider WHERE position=?';
+
+    $binders ="s";
+
+    $params = array('5');
+
+    $result = SelectCond($query, $binders, $params, $db);
+  
+    $row = $result->get_result();
+
+    $rowItem = $row->fetch_assoc();
+
+    $count = isset($rowItem['slider']) ? $rowItem['slider'] : 'slider-5.jpg';
+  
+    try {
+        return $count;
+    } catch (Error $e) {
+        return false;
+    }
+  }
+  else if($position === "6"){
+    $query = 'SELECT `image` AS slider FROM lt_slider WHERE position=?';
+
+    $binders ="s";
+
+    $params = array('6');
+
+    $result = SelectCond($query, $binders, $params, $db);
+  
+    $row = $result->get_result();
+
+    $rowItem = $row->fetch_assoc();
+
+    $count = isset($rowItem['slider']) ? $rowItem['slider'] : 'slider-6.jpg';
+  
+    try {
+        return $count;
+    } catch (Error $e) {
+        return false;
+    }
+  }
+  else if($position === "7"){
+    $query = 'SELECT `image` AS slider FROM lt_slider WHERE position=?';
+
+    $binders ="s";
+
+    $params = array('7');
+
+    $result = SelectCond($query, $binders, $params, $db);
+  
+    $row = $result->get_result();
+
+    $rowItem = $row->fetch_assoc();
+
+    $count = isset($rowItem['slider']) ? $rowItem['slider'] : 'slider-7.jpg';
+  
+    try {
+        return $count;
+    } catch (Error $e) {
+        return false;
+    }
+  }
+  else if($position === "8"){
+    $query = 'SELECT `image` AS slider FROM lt_slider WHERE position=?';
+
+    $binders ="s";
+
+    $params = array('8');
+
+    $result = SelectCond($query, $binders, $params, $db);
+  
+    $row = $result->get_result();
+
+    $rowItem = $row->fetch_assoc();
+
+    $count = isset($rowItem['slider']) ? $rowItem['slider'] : 'slider-8.jpg';
+  
+    try {
+        return $count;
+    } catch (Error $e) {
+        return false;
+    }
+  }
+  else if($position === "9"){
+    $query = 'SELECT `image` AS slider FROM lt_slider WHERE position=?';
+
+    $binders ="s";
+
+    $params = array('9');
+
+    $result = SelectCond($query, $binders, $params, $db);
+  
+    $row = $result->get_result();
+
+    $rowItem = $row->fetch_assoc();
+
+    $count = isset($rowItem['slider']) ? $rowItem['slider'] : 'slider-9.jpg';
+  
+    try {
+        return $count;
+    } catch (Error $e) {
+        return false;
+    }
+  }
+}
+
+//get deal images, 1 to 4
+function getDeal($position, $db)
+{
+  if($position === "1")
+  {
+    $query = 'SELECT `image` AS deal FROM lt_deals WHERE position=?';
+
+    $binders ="s";
+
+    $params = array('1');
+
+    $result = SelectCond($query, $binders, $params, $db);
+  
+    $row = $result->get_result();
+
+    $rowItem = $row->fetch_assoc();
+
+    $count = isset($rowItem['deal']) ? $rowItem['deal'] : 'deal-1.jpg';
+  
+    try {
+        return $count;
+    } catch (Error $e) {
+        return false;
+    }
+  }
+  else if($position === "2")
+  {
+    $query = 'SELECT `image` AS deal FROM lt_deals WHERE position=?';
+
+    $binders ="s";
+
+    $params = array('2');
+
+    $result = SelectCond($query, $binders, $params, $db);
+  
+    $row = $result->get_result();
+
+    $rowItem = $row->fetch_assoc();
+
+    $count = isset($rowItem['deal']) ? $rowItem['deal'] : 'deal-2.jpg';
+  
+    try {
+        return $count;
+    } catch (Error $e) {
+        return false;
+    }
+  }
+  else if($position === "3")
+  {
+    $query = 'SELECT `image` AS deal FROM lt_deals WHERE position=?';
+
+    $binders ="s";
+
+    $params = array('3');
+
+    $result = SelectCond($query, $binders, $params, $db);
+  
+    $row = $result->get_result();
+
+    $rowItem = $row->fetch_assoc();
+
+    $count = isset($rowItem['deal']) ? $rowItem['deal'] : 'deal-3.jpg';
+  
+    try {
+        return $count;
+    } catch (Error $e) {
+        return false;
+    }
+  }
+  else if($position === "4")
+  {
+    $query = 'SELECT `image` AS deal FROM lt_deals WHERE position=?';
+
+    $binders ="s";
+
+    $params = array('4');
+
+    $result = SelectCond($query, $binders, $params, $db);
+  
+    $row = $result->get_result();
+
+    $rowItem = $row->fetch_assoc();
+
+    $count = isset($rowItem['deal']) ? $rowItem['deal'] : 'deal-4.jpg';
+  
+    try {
+        return $count;
+    } catch (Error $e) {
+        return false;
+    }
+  }
 }
