@@ -230,7 +230,8 @@
                                                                 <?php endif ?>
                                                             </div>
                                                         </div>
-
+                                                        <input type="hidden" name="id"
+                                                            value="<?php echo $data['id'] ?>">
                                                         <button class="btn btn--e-brand-b-2" type="submit"
                                                             name="edit-product">UPDATE</button>
                                                     </form>

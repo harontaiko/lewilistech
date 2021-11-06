@@ -211,11 +211,11 @@ class Admin
 
      public function saveProductEdit($data)
      {
-       $query = 'UPDATE lt_products SET `name`=?, price=?, `description`=?, stock=?, color=?, `weight`=?, model=?, category=?, sub_category=?, discount=?, `image`=?, edited_by=?';  
+       $query = 'UPDATE lt_products SET `name`=?, price=?, `description`=?, stock=?, color=?, `weight`=?, model=?, category=?, sub_category=?, discount=?, `image`=?, edited_by=? WHERE `id`=?';  
  
-       $bindersCountNew = "ssssssssssss";
+       $bindersCountNew = "sssssssssssss";
  
-       $values = array($data['name'], $data['price'], $data['description'], $data['stock'], $data['color'], $data['weight'], $data['model'], $data['category'], $data['sub'], $data['discount'], $data['imagename'], $data['creator']);
+       $values = array($data['name'], $data['price'], $data['description'], $data['stock'], $data['color'], $data['weight'], $data['model'], $data['category'], $data['sub'], $data['discount'], $data['imagename'], $data['creator'], $data['id']);
        
        try {
            Update($query, $bindersCountNew, $values, 'lt_products', $this->db);
@@ -227,11 +227,11 @@ class Admin
 
      public function saveProductEditNull($data)
      {
-       $query = 'UPDATE lt_products SET `name`=?, price=?, `description`=?, stock=?, color=?, `weight`=?, model=?, category=?, sub_category=?, discount=?, edited_by=?';  
+       $query = 'UPDATE lt_products SET `name`=?, price=?, `description`=?, stock=?, color=?, `weight`=?, model=?, category=?, sub_category=?, discount=?, edited_by=? WHERE `id`=?';  
  
-       $bindersCountNew = "sssssssssss";
+       $bindersCountNew = "ssssssssssss";
  
-       $values = array($data['name'], $data['price'], $data['description'], $data['stock'], $data['color'], $data['weight'], $data['model'], $data['category'], $data['sub'], $data['discount'], $data['creator']);
+       $values = array($data['name'], $data['price'], $data['description'], $data['stock'], $data['color'], $data['weight'], $data['model'], $data['category'], $data['sub'], $data['discount'], $data['creator'], $data['id']);
        
        try {
            Update($query, $bindersCountNew, $values, 'lt_products', $this->db);

@@ -271,6 +271,7 @@ class Lewis extends Controller
           $data = [
             'title' => 'Lewilis Technology Services | Admin',
             'err'=>'',
+            'id'=>$_POST['id'],
             'succ'=>'',
             'date' => date('Y-m-d', time()),
             'time' => date('H:i:s T', time()),
@@ -296,6 +297,7 @@ class Lewis extends Controller
           $data = [
             'title' => 'Lewilis Technology Services | Admin',
             'err'=>'',
+            'id'=>$_POST['id'],
             'succ'=>'',
             'date' => date('Y-m-d', time()),
             'time' => date('H:i:s T', time()),
@@ -350,6 +352,7 @@ class Lewis extends Controller
             $data = [
               'title' => 'Lewilis Technology Services | Admin',
               'err'=>'',
+              'id'=>$_POST['id'],
               'succ'=>'',
               'date' => date('Y-m-d', time()),
               'time' => date('H:i:s T', time()),
@@ -400,6 +403,7 @@ class Lewis extends Controller
           $data = [
             'title' => 'Lewilis Technology Services | Admin',
             'err'=>'',
+            'id'=>$_POST['id'],
             'succ'=>'',
             'date' => date('Y-m-d', time()),
             'time' => date('H:i:s T', time()),
@@ -696,7 +700,7 @@ class Lewis extends Controller
             $image = $detail['image'];
             $discount = $detail['discount'];
           }
-          $data = ['title'=>'Lewilis Technology Services | Admin', 'name'=>$name, 'price'=>$price, 'description'=>$description, 'stock'=>$stock, 'color'=>$color, 'weight'=>$weight, 'model'=>$model, 'category'=>$category, 'sub_category'=>$sub_category, 'image'=>$image, 'discount'=>$discount, 'detailId'=>$detailId];
+          $data = ['title'=>'Lewilis Technology Services | Admin', 'id'=>$detailId, 'name'=>$name, 'price'=>$price, 'description'=>$description, 'stock'=>$stock, 'color'=>$color, 'weight'=>$weight, 'model'=>$model, 'category'=>$category, 'sub_category'=>$sub_category, 'image'=>$image, 'discount'=>$discount, 'detailId'=>$detailId];
 
           $this->view('lewis/editproduct', $data);
         }

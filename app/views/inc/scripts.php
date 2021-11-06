@@ -19,6 +19,8 @@
 <?php endif; ?>
 <?php if(strpos($_SERVER['REQUEST_URI'], 'lewis/products') !== false): ?>
 <script src="<?php echo URLROOT ?>/public/javascript/products.min.js"></script>
+<?php elseif(strpos($_SERVER['REQUEST_URI'], 'lewis/editproduct') !== false): ?>
+<script src="<?php echo URLROOT ?>/public/javascript/edit-products.min.js"></script>
 <?php endif; ?>
 <noscript>
     <div class="app-setting">
