@@ -233,6 +233,210 @@ class Lewis extends Controller
 
       $this->view('lewis/addressb', $data);
     }
+    public function editThisProduct()
+    {  
+
+      $products = $this->lewisModel->getProductsData();
+
+      if(isset($_POST['edit-product']) && $_SERVER['REQUEST_METHOD'] == 'POST'){
+      
+      $file = $_FILES['product-image'];
+      $fileName = $file['name'];
+      $fileTmpName = $file['tmp_name'];
+      $fileSize = $file['size'];
+      $fileError = $file['error'];
+      $fileType = $file['type'];
+      $fileExtension = explode('.', $fileName);
+      $fileActualExtension = strtolower(end($fileExtension));
+      $allowedExtensions = array('jpg', 'jpeg', 'png', 'gif', 'psd', 'svg');
+      //saved in the users route
+      $fileDestination = '../public/images/images/products/' . preg_replace('/[^A-Za-z0-9. -]/', '', $fileName);
+      $photo = preg_replace('/[^A-Za-z0-9. -]/', '', $fileName);
+      
+      if ($file) {
+        if (in_array($fileActualExtension, $allowedExtensions)) {
+          
+          $productName = $_POST['product-name'];
+          $productPrice = $_POST['product-price'];
+          $productCategory = $_POST['product-category'];
+          $productsub = $_POST['product-sub'];
+          $productDesc = $_POST['product-desc'];
+          $productStock = $_POST['product-stock'];
+          $productColor = $_POST['product-color'];
+          $productWeight = $_POST['product-weight'];
+          $productModel = $_POST['product-model'];
+          $productDiscount = $_POST['product-disc'];
+          
+
+          $data = [
+            'title' => 'Lewilis Technology Services | Admin',
+            'err'=>'',
+            'succ'=>'',
+            'date' => date('Y-m-d', time()),
+            'time' => date('H:i:s T', time()),
+            'ip' => get_ip_address(),
+            'category'=>$productCategory,
+            'sub'=>$productsub,
+            'product'=>$products,
+            'name' => $productName,
+            'stock' => $productStock,
+            'price' => $productPrice,
+            'color' => $productColor,
+            'model' => $productModel,
+            'weight' => $productWeight,
+            'discount' => $productDiscount,
+            'description' => $productDesc,
+            'imagename' => $photo,
+            'creator' => $_SESSION['user_name'],
+            'destination' => $fileDestination,
+            'tempname' => $fileTmpName,
+          ];
+        
+
+          $data = [
+            'title' => 'Lewilis Technology Services | Admin',
+            'err'=>'',
+            'succ'=>'',
+            'date' => date('Y-m-d', time()),
+            'time' => date('H:i:s T', time()),
+            'ip' => get_ip_address(),
+            'category'=>$productCategory,
+            'sub'=>$productsub,
+            'product'=>$products,
+            'name' => $productName,
+            'stock' => $productStock,
+            'price' => $productPrice,
+            'color' => $productColor,
+            'model' => $productModel,
+            'weight' => $productWeight,
+            'discount' => $productDiscount,
+            'description' => $productDesc,
+            'imagename' => $photo,
+            'creator' => $_SESSION['user_name'],
+            'destination' => $fileDestination,
+            'tempname' => $fileTmpName,
+          ];
+
+          move_uploaded_file($fileTmpName, $fileDestination);
+        
+          $save = $this->lewisModel->saveProductEdit($data);
+          
+          if($save)
+          {
+            $data["succ"] =
+            "item updated successfully!";
+            $this->view("lewis/products", $data);
+          }
+          else{
+            $data["err"] =
+            "an error occured while saving your product, please check your connection and try again";
+            $this->view("lewis/products", $data);
+          }
+        }
+        else
+        {
+          $productName = $_POST['product-name'];
+          $productPrice = $_POST['product-price'];
+          $productCategory = $_POST['product-category'];
+          $productsub = $_POST['product-sub'];
+          $productDesc = $_POST['product-desc'];
+          $productStock = $_POST['product-stock'];
+          $productColor = $_POST['product-color'];
+          $productWeight = $_POST['product-weight'];
+          $productModel = $_POST['product-model'];
+          $productDiscount = $_POST['product-disc'];
+
+         
+            $data = [
+              'title' => 'Lewilis Technology Services | Admin',
+              'err'=>'',
+              'succ'=>'',
+              'date' => date('Y-m-d', time()),
+              'time' => date('H:i:s T', time()),
+              'ip' => get_ip_address(),
+              'category'=>$productCategory,
+              'sub'=>$productsub,
+              'product'=>$products,
+              'name' => $productName,
+              'stock' => $productStock,
+              'price' => $productPrice,
+              'color' => $productColor,
+              'model' => $productModel,
+              'weight' => $productWeight,
+              'discount' => $productDiscount,
+              'description' => $productDesc,
+              'creator' => $_SESSION['user_name'],
+            ];          
+    
+            $save = $this->lewisModel->saveProductEditNull($data);
+            if($save)
+            {
+              $data["succ"] =
+            "item updated successfully!";
+            $this->view("lewis/products", $data);
+            }
+            else{
+              $data["err"] =
+              "request could not be completed, please check your connection";
+              $this->view("lewis/products", $data);
+            } 
+          
+        }
+      }
+      else{
+        
+        
+        $productName = $_POST['product-name'];
+        $productPrice = $_POST['product-price'];
+        $productCategory = $_POST['product-category'];
+        $productsub = $_POST['product-sub'];
+        $productDesc = $_POST['product-desc'];
+        $productStock = $_POST['product-stock'];
+        $productColor = $_POST['product-color'];
+        $productWeight = $_POST['product-weight'];
+        $productModel = $_POST['product-model'];
+        $productDiscount = $_POST['product-disc'];
+
+          $data = [
+            'title' => 'Lewilis Technology Services | Admin',
+            'err'=>'',
+            'succ'=>'',
+            'date' => date('Y-m-d', time()),
+            'time' => date('H:i:s T', time()),
+            'ip' => get_ip_address(),
+            'category'=>$productCategory,
+            'sub'=>$productsub,
+            'product'=>$products,
+            'name' => $productName,
+            'stock' => $productStock,
+            'price' => $productPrice,
+            'color' => $productColor,
+            'model' => $productModel,
+            'weight' => $productWeight,
+            'discount' => $productDiscount,
+            'description' => $productDesc,
+            'creator' => $_SESSION['user_name'],
+          ];      
+  
+          $save = $this->pageModel->saveProductEditNull($data);
+          if($save)
+          {
+            $data["succ"] =
+            "item updated successfully!";
+          }
+          else{
+            $data["err"] =
+              "request could not be completed, please check your connection";
+          }
+      
+      }
+      
+    }else{
+      http_response_code(404);
+      include('../app/404.php');
+      die();
+    }    
+  }
 
     public function addProduct()
     {  
@@ -463,6 +667,50 @@ class Lewis extends Controller
       $data = ['title'=>'Lewilis Technology Services | Admin'];
 
       $this->view('lewis/forgot', $data);
+    }
+
+    public function editproduct($id)
+    {
+      if(!$this->isLoggedIn())
+      {
+        redirect('lewis/index');
+      }
+
+      if(isset($id) || is_numeric($id)){
+        $row = $this->lewisModel->getItemById($id);
+        if($row){
+          $myrow = $this->lewisModel->getProduct(htmlspecialchars($id));
+          //reviews
+          $reviewCount =  $this->lewisModel->getReviewsCount();
+          while($detail = $myrow->fetch_assoc()){
+            $detailId = $detail['id'];
+            $name = $detail['name'];
+            $price = $detail['price'];
+            $description = $detail['description'];
+            $stock = $detail['stock'];
+            $color = $detail['color'];
+            $weight = $detail['weight'];
+            $model = $detail['model'];
+            $category = $detail['category'];
+            $sub_category = $detail['sub_category'];
+            $image = $detail['image'];
+            $discount = $detail['discount'];
+          }
+          $data = ['title'=>'Lewilis Technology Services | Admin', 'name'=>$name, 'price'=>$price, 'description'=>$description, 'stock'=>$stock, 'color'=>$color, 'weight'=>$weight, 'model'=>$model, 'category'=>$category, 'sub_category'=>$sub_category, 'image'=>$image, 'discount'=>$discount, 'detailId'=>$detailId];
+
+          $this->view('lewis/editproduct', $data);
+        }
+        else{
+              http_response_code(404);
+              include('../app/404.php');
+              die();
+        }
+      }
+      else{
+            http_response_code(404);
+              include('../app/404.php');
+              die();
+      }
     }
 
       // Logout & Destroy Session

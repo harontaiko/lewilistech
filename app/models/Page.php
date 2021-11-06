@@ -89,6 +89,110 @@ class Page
         }
     }
 
+    public function getReviewsCount()
+    {
+        $query = 'SELECT * FROM lt_reviews';
+ 
+        $result = SelectCondFree($query, 'lt_reviews', $this->db);
+
+        $row = $result->get_result();
+
+        try {
+            return $row->num_rows;
+        } catch (Error $e) {
+            return false;
+        }
+    }
+
+    public function getReviews()
+    {
+        $query = 'SELECT * FROM lt_reviews';
+ 
+        $result = SelectCondFree($query, 'lt_reviews', $this->db);
+
+        $row = $result->get_result();
+
+        try {
+            return $row;
+        } catch (Error $e) {
+            return false;
+        }
+    }
+
+    public function getReviewVid()
+    {
+        $query = 'SELECT * FROM lt_reviewvid';
+ 
+        $result = SelectCondFree($query, 'lt_reviewvid', $this->db);
+
+        $row = $result->get_result();
+
+        try {
+            return $row;
+        } catch (Error $e) {
+            return false;
+        }
+    }
+
+    public function getAverageReviewCount()
+    {
+        $query = 'SELECT AVG(rating) AS rating FROM lt_reviews';
+ 
+        $result = SelectCondFree($query, 'lt_reviews', $this->db);
+
+        $row = $result->get_result();
+
+        $rowItem = $row->fetch_assoc();
+       
+        $rating = isset($rowItem['rating']) ? $rowItem['rating'] : 0;
+
+        try {
+            return $rating;
+        } catch (Error $e) {
+            return false;
+        }
+    }
+
+    public function getItemById($id)
+    {
+        $query = 'SELECT `id`, `name`, price, `description`, stock, color, `weight`, model, sub_category, category, discount, `image`, date_created, time_created, created_by FROM lt_products WHERE `id` = ?';
+
+        $binders = "s";
+
+        $parameters = array($id);
+
+        $result = SelectCond($query, $binders, $parameters, $this->db);
+
+        $row = $result->get_result();
+
+        $numRows = $row->num_rows;
+
+        if ($numRows > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function getProduct($id)
+    {
+        $query = 'SELECT `id`, `name`, price, `description`, stock, color, `weight`, model, sub_category, category, discount, `image`, date_created, time_created, created_by FROM lt_products WHERE `id` = ?';
+
+        $binders = "s";
+
+        $parameters = array($id);
+
+        $result = SelectCond($query, $binders, $parameters, $this->db);
+
+        $row = $result->get_result();
+
+        try {
+            return $row;
+        } catch (Error $e) {
+            return false;
+        }
+    }
+
     public function getFeatured()
     {
         $query = 'SELECT * FROM lt_featured ORDER BY id ASC';

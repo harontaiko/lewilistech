@@ -188,7 +188,8 @@
                                                 <div class="gl-inline">
                                                     <div class="u-s-m-b-30">
 
-                                                        <label class="gl-label" for="product-image">Product Image
+                                                        <label class="gl-label" for="product-image">Product
+                                                            Image(600x600px)
                                                             *</label>
 
                                                         <input class="input-text input-text--primary-style" type="file"
@@ -226,7 +227,8 @@
                                                         <div>
                                                             <div class="dash__link dash__link--brand">
 
-                                                                <a href="">EDIT</a>
+                                                                <a
+                                                                    href="<?php echo ADMINROOT; ?>/editproduct/<?php echo $inventory['id'] ?>">EDIT</a>
                                                             </div>
                                                         </div>
                                                     </div>

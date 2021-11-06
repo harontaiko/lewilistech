@@ -58,6 +58,46 @@ class Admin
          }
      }
 
+     public function getItemById($id)
+     {
+         $query = 'SELECT `id`, `name`, price, `description`, stock, color, `weight`, model, sub_category, category, discount, `image`, date_created, time_created, created_by FROM lt_products WHERE `id` = ?';
+ 
+         $binders = "s";
+ 
+         $parameters = array($id);
+ 
+         $result = SelectCond($query, $binders, $parameters, $this->db);
+ 
+         $row = $result->get_result();
+ 
+         $numRows = $row->num_rows;
+ 
+         if ($numRows > 0) {
+             return true;
+         } else {
+             return false;
+         }
+     }
+ 
+     public function getProduct($id)
+     {
+         $query = 'SELECT `id`, `name`, price, `description`, stock, color, `weight`, model, sub_category, category, discount, `image`, date_created, time_created, created_by FROM lt_products WHERE `id` = ?';
+ 
+         $binders = "s";
+ 
+         $parameters = array($id);
+ 
+         $result = SelectCond($query, $binders, $parameters, $this->db);
+ 
+         $row = $result->get_result();
+ 
+         try {
+             return $row;
+         } catch (Error $e) {
+             return false;
+         }
+     }
+
      public function getAdminData()
      {
          $query = 'SELECT * FROM lt_admin';
@@ -83,6 +123,40 @@ class Admin
  
          try {
              return $row;
+         } catch (Error $e) {
+             return false;
+         }
+     }
+
+     public function getReviewsCount()
+     {
+         $query = 'SELECT * FROM lt_reviews';
+  
+         $result = SelectCondFree($query, 'lt_reviews', $this->db);
+ 
+         $row = $result->get_result();
+ 
+         try {
+             return $row->num_rows;
+         } catch (Error $e) {
+             return false;
+         }
+     }
+
+     public function getAverageReviewCount()
+     {
+         $query = 'SELECT AVG(rating) AS rating FROM lt_reviews';
+  
+         $result = SelectCondFree($query, 'lt_reviews', $this->db);
+ 
+         $row = $result->get_result();
+
+         $rowItem = $row->fetch_assoc();
+        
+         $rating = isset($rowItem['rating']) ? $rowItem['rating'] : 0;
+ 
+         try {
+             return $rating;
          } catch (Error $e) {
              return false;
          }
@@ -129,6 +203,38 @@ class Admin
                $this->db
            );
          
+           return true;
+       } catch (Error $e) {
+           return false;
+       }
+     }
+
+     public function saveProductEdit($data)
+     {
+       $query = 'UPDATE lt_products SET `name`=?, price=?, `description`=?, stock=?, color=?, `weight`=?, model=?, category=?, sub_category=?, discount=?, `image`=?, edited_by=?';  
+ 
+       $bindersCountNew = "ssssssssssss";
+ 
+       $values = array($data['name'], $data['price'], $data['description'], $data['stock'], $data['color'], $data['weight'], $data['model'], $data['category'], $data['sub'], $data['discount'], $data['imagename'], $data['creator']);
+       
+       try {
+           Update($query, $bindersCountNew, $values, 'lt_products', $this->db);
+           return true;
+       } catch (Error $e) {
+           return false;
+       }
+     }
+
+     public function saveProductEditNull($data)
+     {
+       $query = 'UPDATE lt_products SET `name`=?, price=?, `description`=?, stock=?, color=?, `weight`=?, model=?, category=?, sub_category=?, discount=?, edited_by=?';  
+ 
+       $bindersCountNew = "sssssssssss";
+ 
+       $values = array($data['name'], $data['price'], $data['description'], $data['stock'], $data['color'], $data['weight'], $data['model'], $data['category'], $data['sub'], $data['discount'], $data['creator']);
+       
+       try {
+           Update($query, $bindersCountNew, $values, 'lt_products', $this->db);
            return true;
        } catch (Error $e) {
            return false;

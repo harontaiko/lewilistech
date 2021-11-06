@@ -185,7 +185,7 @@
                                     <div class="product-o__wrap">
 
                                         <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                            href="product-detail.html">
+                                            href="<?php echo URLROOT; ?>/pages/detail/">
 
                                             <img class="aspect__img"
                                                 src="<?php echo URLROOT; ?>/public/images/images/deals_of_the_day/<?php echo $deals['image']; ?>"
@@ -230,7 +230,8 @@
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html"><?php echo $deals['name'] ?></a></span>
+                                        <a
+                                            href="<?php echo URLROOT; ?>/pages/detail/"><?php echo $deals['name'] ?></a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -311,7 +312,7 @@
                                         <div class="product-o__wrap">
 
                                             <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                                href="<?php echo URLROOT ?>/product-detail/<?php echo ($products['id']) ?>">
+                                                href="<?php echo URLROOT ?>/pages/detail/<?php echo ($products['id']) ?>">
 
                                                 <img class="aspect__img"
                                                     src="<?php echo URLROOT; ?>/public/images/images/products/<?php echo ($products['image']) ?>"
@@ -354,7 +355,8 @@
 
                                         <span class="product-o__name">
 
-                                            <a href="<?php echo URLROOT ?>/product-detail/id"><?php echo ($products['name']) ?>
+                                            <a
+                                                href="<?php echo URLROOT ?>/pages/detail/<?php echo ($products['id']) ?>"><?php echo ($products['name']) ?>
                                             </a></span>
                                         <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                                 class="fas fa-star"></i><i class="fas fa-star"></i><i
@@ -426,7 +428,7 @@
                                 <div class="product-o__wrap">
 
                                     <a class="aspect aspect--bg-grey aspect--square u-d-block"
-                                        href="product-detail.html">
+                                        href="<?php echo URLROOT; ?>/pages/detail/">
 
                                         <img class="aspect__img"
                                             src="<?php echo URLROOT; ?>/public/images/images/arrivals/<?php echo $arrivals['image']; ?>"
@@ -466,7 +468,8 @@
 
                                 <span class="product-o__name">
 
-                                    <a href="product-detail.html"><?php echo $arrivals['name']; ?></a></span>
+                                    <a
+                                        href="<?php echo URLROOT; ?>/pages/detail/"><?php echo $arrivals['name']; ?></a></span>
                                 <div class="product-o__rating gl-rating-style"><i class="far fa-star"></i><i
                                         class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
                                         class="far fa-star"></i>
@@ -568,7 +571,8 @@
                         <div class="product-o product-o--hover-on u-h-100">
                             <div class="product-o__wrap">
 
-                                <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                    href="<?php echo URLROOT; ?>/pages/detail/">
 
                                     <img class="aspect__img"
                                         src="<?php echo URLROOT; ?>/public/images/images/featured/<?php echo $featured['image']; ?>"
@@ -608,7 +612,8 @@
 
                             <span class="product-o__name">
 
-                                <a href="product-detail.html"><?php echo $featured['name']; ?></a></span>
+                                <a
+                                    href="<?php echo URLROOT; ?>/pages/detail/"><?php echo $featured['name']; ?></a></span>
                             <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i
                                     class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                     class="fas fa-star-half-alt"></i>
@@ -653,7 +658,7 @@
                                         <div class="product-l__img-wrap">
 
                                             <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link"
-                                                href="product-detail.html">
+                                                href="<?php echo URLROOT; ?>/pages/detail/">
 
                                                 <img class="aspect__img"
                                                     src="<?php echo URLROOT; ?>/public/images/images/special/<?php echo $special['image'] ?>"
@@ -668,7 +673,8 @@
 
                                             <span class="product-l__name">
 
-                                                <a href="product-detail.html"><?php echo $special['name'] ?></a></span>
+                                                <a
+                                                    href="<?php echo URLROOT; ?>/pages/detail/"><?php echo $special['name'] ?></a></span>
 
                                             <span class="product-l__price">ksh
                                                 <?php echo number_format($special['price']); ?></span>
@@ -694,7 +700,7 @@
                                         <div class="product-l__img-wrap">
 
                                             <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link"
-                                                href="product-detail.html">
+                                                href="<?php echo URLROOT; ?>/pages/detail/">
 
                                                 <img class="aspect__img"
                                                     src="<?php echo URLROOT; ?>/public/images/images/weekly/<?php echo $weekly['image'] ?>"
@@ -709,7 +715,8 @@
 
                                             <span class="product-l__name">
 
-                                                <a href="product-detail.html"><?php echo $weekly['name'] ?></a></span>
+                                                <a
+                                                    href="<?php echo URLROOT; ?>/pages/detail/"><?php echo $weekly['name'] ?></a></span>
 
                                             <span class="product-l__price">ksh
                                                 <?php echo number_format($weekly['price']); ?>
@@ -737,7 +744,7 @@
                                         <div class="product-l__img-wrap">
 
                                             <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link"
-                                                href="product-detail.html">
+                                                href="<?php echo URLROOT; ?>/pages/detail/">
 
                                                 <img class="aspect__img"
                                                     src="<?php echo URLROOT; ?>/public/images/images/flash/<?php echo $flash['image']; ?>"
@@ -755,7 +762,8 @@
 
                                             <span class="product-l__name">
 
-                                                <a href="product-detail.html"><?php echo $flash['name']; ?></a></span>
+                                                <a
+                                                    href="<?php echo URLROOT; ?>/pages/detail/"><?php echo $flash['name']; ?></a></span>
 
                                             <span class="product-l__price">ksh
                                                 <?php echo number_format($flash['price']); ?></span>

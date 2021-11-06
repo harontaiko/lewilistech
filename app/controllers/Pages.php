@@ -89,6 +89,50 @@ class Pages extends Controller
       $this->view('pages/faqs', $data);
     }
 
+    public function detail($id)
+    {
+    /*   if (!isset($_SESSION["user_id"])) {
+       $this->Login();
+      }  */
+
+      if(isset($id) || is_numeric($id)){
+        $row = $this->pageModel->getItemById($id);
+        if($row){
+          $myrow = $this->pageModel->getProduct(htmlspecialchars($id));
+          //reviews
+          $reviewCount =  $this->pageModel->getReviewsCount();
+          $avgrating = $this->pageModel->getAverageReviewCount();
+          $reviews = $this->pageModel->getReviews();
+          $vid = $this->pageModel->getReviewVid();
+          $vidcount = $this->pageModel->getReviewVid()->num_rows;
+          while($detail = $myrow->fetch_assoc()){
+            $detailId = $detail['id'];
+            $name = $detail['name'];
+            $price = $detail['price'];
+            $description = $detail['description'];
+            $stock = $detail['stock'];
+            $color = $detail['color'];
+            $weight = $detail['weight'];
+            $model = $detail['model'];
+            $category = $detail['category'];
+            $sub_category = $detail['sub_category'];
+            $image = $detail['image'];
+            $discount = $detail['discount'];
+          }
+          $array = ['reviews'=>$reviews, 'vid'=>$vid];
+          $data = ['title'=>'Product', 'array'=>$array, 'name'=>$name, 'vidcount'=>$vidcount, 'reviewCount'=>$reviewCount, 'avgrating'=>$avgrating,  'price'=>$price, 'description'=>$description, 'stock'=>$stock, 'color'=>$color, 'weight'=>$weight, 'model'=>$model, 'category'=>$category, 'sub_category'=>$sub_category, 'image'=>$image, 'discount'=>$discount, 'detailId'=>$detailId];
+
+          $this->view('pages/detail', $data);
+        }
+        else{
+          $this->Notfound();
+        }
+      }
+      else{
+        $this->Notfound();
+      }
+    }
+
 
     public function Notfound()
     {
